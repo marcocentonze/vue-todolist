@@ -8,26 +8,28 @@ MILESTONE 3 Predisporre un campo di input testuale e un pulsante “aggiungi”:
 const { createApp } = Vue
 createApp({
     data() {
+        
       return {
-        //newTask : "",
-        todo = //create my object
+        todo : [
             {
                 task:"fare i compiti",
                 taskCompleted: false,
-            };
+            },
 
             {
                 task:"uscire il cane",
                 taskCompleted: false,
-            };
+            },
           
             {
                 task:"fare la spesa",
                 taskCompleted: true,
-            };
+            },
+        ]
            
       },
     },
+   
     methods: {
         addTask() {
          this.todo.push(this.newTask)
