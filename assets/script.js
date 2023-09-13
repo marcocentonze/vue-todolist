@@ -28,9 +28,9 @@ createApp({
         ]
            
       },
-    },
+    }
    
-    methods: {
+   methods: {
         addTask() {
          this.todo.push(this.newTask)
         }
