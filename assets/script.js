@@ -38,5 +38,9 @@ createApp({
         removeTask(index) {
             this.todo.splice(index, 1);
           },
+          taskDone(index) {  //inverto lo stato(fixato)
+            this.todo[index].taskCompleted = !this.todo[index].taskCompleted;
+           // console.log(this.todo[index].taskCompleted);
+          },
     }
   }).mount('#app')
