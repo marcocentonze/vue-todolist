@@ -10,6 +10,7 @@ createApp({
     data() {
         
       return {
+        newTask:"",
         todo : [
             {
                 task:"fare i compiti",
@@ -27,8 +28,8 @@ createApp({
             },
         ]
            
-      },
-    }
+      }
+    },
    
    methods: {
         addTask() {

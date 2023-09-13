@@ -15,7 +15,9 @@
         <button @click="addTask">Aggiungi</button>
          
         <ul>
-            <li>{{todo}}</li>
+            <li v-for="task in todo" :class="{ 'completed': task.taskCompleted }">
+             {{task.task}} 
+            </li>
         </ul>
 
 

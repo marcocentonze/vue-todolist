@@ -2,4 +2,23 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    align-items: center;
 }
+
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+
+  .completed {
+    text-decoration: line-through; 
+  }
+  
+  
+  
+  
+  
+  
+  
+
