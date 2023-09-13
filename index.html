@@ -17,7 +17,7 @@
         <button @click="addTask">Aggiungi</button>
          
         
-            <ul>
+            <ul v-if="todo.length > 0">
               <li v-for="(task, index) in todo" :style="{ 'text-decoration': task.taskCompleted ? 'line-through' : 'none' }" @click="taskDone(index)">
                 {{ task.task }}
                 <svg @click="removeTask(index)" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backspace-reverse-fill" viewBox="0 0 16 16">
@@ -25,6 +25,10 @@
                 </svg>
               </li>
             </ul>
+              
+            
+            <h2 v-else>Complimenti,hai completato tutta la tua to-do list!</h2>
+           
          
           
 
