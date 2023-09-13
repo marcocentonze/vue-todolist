@@ -11,10 +11,12 @@
     <div id="app">
         
         <h1>TO DO LIST</h1>
-        <input type="text" placeholder="Scrivi le tue task">
-        <button>Aggiungi</button>
-
-        <h3>Risultato qua</h3>
+        <input v-model="newTask" type="text" placeholder="Inserisci le tue task">
+        <button @click="addTask">Aggiungi</button>
+         
+        <ul>
+            <li>{{todo}}</li>
+        </ul>
 
 
 

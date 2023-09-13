@@ -9,21 +9,28 @@ const { createApp } = Vue
 createApp({
     data() {
       return {
-        todo : [//create my object
+        //newTask : "",
+        todo = //create my object
             {
                 task:"fare i compiti",
                 taskCompleted: false,
-            },
+            };
+
             {
                 task:"uscire il cane",
                 taskCompleted: false,
-            },
+            };
+          
             {
                 task:"fare la spesa",
                 taskCompleted: true,
-            }
+            };
            
-        ]
-      }
+      },
+    },
+    methods: {
+        addTask() {
+         this.todo.push(this.newTask)
+        }
     }
   }).mount('#app')
