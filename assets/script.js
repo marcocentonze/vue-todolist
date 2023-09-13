@@ -9,7 +9,21 @@ const { createApp } = Vue
 createApp({
     data() {
       return {
-        message: 'Hello Vue!'
+        todo : [//create my object
+            {
+                task:"fare i compiti",
+                taskCompleted: false,
+            },
+            {
+                task:"uscire il cane",
+                taskCompleted: false,
+            },
+            {
+                task:"fare la spesa",
+                taskCompleted: true,
+            }
+           
+        ]
       }
     }
   }).mount('#app')
