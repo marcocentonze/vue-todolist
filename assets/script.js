@@ -44,6 +44,7 @@ createApp({
         removeTask(index) {
             this.todo.splice(index, 1);
           },
+          //BONUS 2
           taskDone(index) {  //inverte la variabile booleana(fixato)
             this.todo[index].taskCompleted = !this.todo[index].taskCompleted;
            // console.log(this.todo[index].taskCompleted);
